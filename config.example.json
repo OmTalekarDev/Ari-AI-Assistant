@@ -1,0 +1,7 @@
+{
+  "assistant_name": "Ari",
+  "whisper_model": "base.en",
+  "language": "en",
+  "record_seconds": 5,
+  "enable_ocr": false
+}
