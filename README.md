@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F5AF0,100:2CB67D&height=220&section=header&text=Ari%20AI%20Assistant&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Local-first%20AI%20voice%20assistant&descAlignY=58&descSize=18" alt="Ari AI Assistant banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/BlockZGaming/Ari-AI-Assistant"><img src="https://img.shields.io/github/stars/BlockZGaming/Ari-AI-Assistant?style=for-the-badge&logo=github" alt="GitHub stars" /></a>
+  <a href="https://github.com/BlockZGaming/Ari-AI-Assistant/issues"><img src="https://img.shields.io/github/issues/BlockZGaming/Ari-AI-Assistant?style=for-the-badge" alt="GitHub issues" /></a>
+  <a href="https://github.com/BlockZGaming/Ari-AI-Assistant/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="MIT License" /></a>
+</p>
+
 # 🤖 Ari — AI Voice Assistant
 
 Ari is a personal AI voice-assistant project built in Python, focused on local speech recognition and practical desktop automation.
@@ -8,6 +18,23 @@ Ari is a personal AI voice-assistant project built in Python, focused on local s
 [![Status](https://img.shields.io/badge/Status-Active%20Development-orange)](.)
 
 > A local-first voice assistant prototype with speech recognition, command routing, and optional OCR support.
+
+## 🎬 Demo
+
+### Example terminal session
+
+```text
+🤖 Ari starting...
+🧠 Whisper model: base.en
+🎙️ Listening for 5 seconds...
+🗣️ You: hello Ari
+🤖 Ari: Hello! How can I help?
+🎙️ Listening for 5 seconds...
+🗣️ You: goodbye
+👋 Ari: Goodbye!
+```
+
+> 📸 **Demo screenshots coming soon.** Once the assistant is running reliably on your machine, add a screenshot or screen recording here to showcase the real application.
 
 ## ✨ Features
 
