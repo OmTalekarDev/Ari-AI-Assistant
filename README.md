@@ -8,7 +8,7 @@
   <a href="https://github.com/BlockZGaming/Ari-AI-Assistant/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="MIT License" /></a>
 </p>
 
-# 🤖 Ari — AI Voice Assistant
+# 🤖 Ari AI Voice Assistant
 
 Ari is a personal AI voice-assistant project built in Python, focused on local speech recognition and practical desktop automation.
 
