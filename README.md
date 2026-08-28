@@ -2,26 +2,33 @@
 
 Ari is a personal AI voice-assistant project built in Python, focused on local speech recognition and practical desktop automation.
 
-> **Status:** Active development 🚧
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Faster-Whisper](https://img.shields.io/badge/Speech-Faster--Whisper-6F42C1)](https://github.com/SYSTRAN/faster-whisper)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active%20Development-orange)](.)
+
+> A local-first voice assistant prototype with speech recognition, command routing, and optional OCR support.
 
 ## ✨ Features
 
-- 🎙️ Microphone input
-- 🧠 Local speech-to-text with **Faster-Whisper**
-- 🗣️ Voice-command processing
-- 🔎 Optional OCR support with **Tesseract**
-- ⚙️ Configurable model and assistant settings
-- 🪟 Windows-friendly PowerShell launch script
-- 🔒 Designed with local-first processing in mind
+- 🎙️ Microphone input with `sounddevice`
+- 🧠 Local speech-to-text using **Faster-Whisper**
+- 🗣️ Basic voice-command routing
+- 🔎 Optional OCR with **Tesseract**
+- ⚙️ JSON-based configuration
+- 🪟 Windows PowerShell launcher
+- 🔒 Local-first architecture
 
 ## 🧰 Tech Stack
 
-- Python
-- Faster-Whisper
-- NumPy
-- SoundDevice
-- Tesseract OCR (optional)
-- PowerShell
+| Technology | Purpose |
+|---|---|
+| Python | Core application |
+| Faster-Whisper | Speech recognition |
+| NumPy | Audio data handling |
+| SoundDevice | Microphone capture |
+| Tesseract OCR | Optional image text extraction |
+| PowerShell | Windows launcher |
 
 ## 📁 Project Structure
 
@@ -36,12 +43,13 @@ Ari-AI-Assistant/
 ├── requirements.txt
 ├── run.ps1
 ├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
 ## 🚀 Installation
 
-### 1. Clone the repository
+### 1. Clone
 
 ```bash
 git clone https://github.com/BlockZGaming/Ari-AI-Assistant.git
@@ -66,9 +74,9 @@ Windows PowerShell:
 pip install -r requirements.txt
 ```
 
-### 4. Configure Ari
+### 4. Create your configuration
 
-Copy `config.example.json` to `config.json` and adjust the settings.
+Copy `config.example.json` to `config.json` and adjust the values for your system.
 
 ### 5. Run
 
@@ -76,7 +84,7 @@ Copy `config.example.json` to `config.json` and adjust the settings.
 python src/main.py
 ```
 
-Or on Windows:
+Or use:
 
 ```powershell
 .\run.ps1
@@ -84,18 +92,31 @@ Or on Windows:
 
 ## 🧠 Whisper Model
 
-The default configuration uses `base.en`, matching the model used during Ari's development. You can change the model in `config.json` depending on your hardware.
+The default configuration uses the `base.en` Faster-Whisper model. You can change the model in `config.json` depending on your hardware and accuracy/speed requirements.
 
 ## 🔎 OCR
 
-OCR is optional. If Tesseract is installed and configured, Ari can use the OCR helper to extract text from an image.
+OCR is optional. Install Tesseract separately, then use the helper in `src/ocr.py` to extract text from an image.
+
+## 🗣️ Current Commands
+
+Ari currently recognizes simple commands such as:
+
+```text
+hello
+hi ari
+exit
+quit
+stop
+goodbye
+```
 
 ## 🛣️ Roadmap
 
 - [x] Local speech-to-text
 - [x] Configurable Whisper model
 - [x] Basic command routing
-- [x] Optional OCR module
+- [x] Optional OCR helper
 - [ ] Wake-word activation
 - [ ] Better conversational responses
 - [ ] Desktop automation
@@ -104,8 +125,12 @@ OCR is optional. If Tesseract is installed and configured, Ari can use the OCR h
 
 ## 🤝 Contributing
 
-Issues, ideas and pull requests are welcome.
+Issues, feature ideas, and pull requests are welcome.
 
-## 📜 License
+## 📄 License
 
-MIT License
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+Built with Python by **Om Talekar** (`BlockZGaming`).
